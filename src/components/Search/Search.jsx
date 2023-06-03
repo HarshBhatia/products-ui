@@ -61,6 +61,7 @@ const Search = () => {
                 key={i}
                 onClick={() => openLink(product.link)}
               >
+                <img src={product.image} alt={product.description} />
                 <p>{product.description}</p>
                 <p>{product.price}</p>
               </div>

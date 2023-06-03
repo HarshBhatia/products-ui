@@ -12,7 +12,7 @@ const Search = () => {
     setLoading(true);
 
     const res = await axios.get(
-      `http://localhost:5001/api/products/search?keyword=${query}`
+      `${REACT_APP_API_URL}/products/search?keyword=${query}`
     );
 
     setResults(res.data);

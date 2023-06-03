@@ -12,7 +12,7 @@ const Search = () => {
     setLoading(true);
 
     const res = await axios.get(
-      `${REACT_APP_API_URL}/products/search?keyword=${query}`
+      `${process.env.REACT_APP_API_URL}/products/search?keyword=${query}`
     );
 
     setResults(res.data);
